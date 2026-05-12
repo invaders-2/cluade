@@ -3,6 +3,7 @@
 > 本文件托管于：github.com/invaders-2/cluade
 > 每次新对话，第一件事：检查该仓库是否有更新。如有，先拉取最新版再开始工作。
 > 如需修改规则，更新后提交到仓库，其他机器 git pull 同步。
+> 放置路径：Windows → C:\Users\<用户名>\CLAUDE.md，Mac → ~/CLAUDE.md
 
 ## 组织架构（三层模型 + 临时工）
 
