@@ -1,0 +1,14 @@
+# config.yaml — Writer 创作者 运行配置
+role: writer
+display_name: Writer 创作者
+model: claude-sonnet-4-6
+paths:
+  soul: profiles/writer/soul.md
+  user: profiles/writer/user.md
+  memory: profiles/writer/memory.md
+  skills: profiles/writer/skills/
+  env: profiles/writer/.env   # 不入库
+permissions:
+  can_execute_code: false
+forbidden:
+  - 越界做其他角色的职能

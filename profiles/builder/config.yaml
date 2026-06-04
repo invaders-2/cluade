@@ -1,0 +1,14 @@
+# config.yaml — Builder 工程师 运行配置
+role: builder
+display_name: Builder 工程师
+model: claude-opus-4-8
+paths:
+  soul: profiles/builder/soul.md
+  user: profiles/builder/user.md
+  memory: profiles/builder/memory.md
+  skills: profiles/builder/skills/
+  env: profiles/builder/.env   # 不入库
+permissions:
+  can_execute_code: true
+forbidden:
+  - 越界做其他角色的职能

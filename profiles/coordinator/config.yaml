@@ -1,0 +1,17 @@
+# config.yaml — Coordinator 运行配置
+role: coordinator
+display_name: 协调员 / 项目经理
+model: claude-opus-4-8          # 中枢角色用强模型；简单分流可降级
+paths:
+  soul: profiles/coordinator/soul.md
+  user: profiles/coordinator/user.md
+  memory: profiles/coordinator/memory.md
+  skills: profiles/coordinator/skills/
+  env: profiles/coordinator/.env   # 不入库，见 .gitignore
+permissions:
+  can_execute_code: false        # 协调员绝不亲自实现
+  can_assign_tasks: true
+  can_review: true
+forbidden:
+  - 输出可直接落地的实现（代码块/函数/diff/文件全文）
+  - 越界去调研/创作/开发

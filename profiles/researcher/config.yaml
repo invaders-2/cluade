@@ -1,0 +1,14 @@
+# config.yaml — Researcher 研究员 运行配置
+role: researcher
+display_name: Researcher 研究员
+model: claude-sonnet-4-6
+paths:
+  soul: profiles/researcher/soul.md
+  user: profiles/researcher/user.md
+  memory: profiles/researcher/memory.md
+  skills: profiles/researcher/skills/
+  env: profiles/researcher/.env   # 不入库
+permissions:
+  can_execute_code: false
+forbidden:
+  - 越界做其他角色的职能
